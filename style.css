@@ -1,0 +1,253 @@
+* {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f5fc;
+}
+
+article {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-content {
+  display: flex;
+  height: 70vh;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.encrypted-text-area {
+  width: 30%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.281);
+  max-width: 350px;
+}
+
+.encrypted-text-area div,
+.encrypted-text-area p,
+.encrypted-text-area span {
+  background-color: #ffffff;
+}
+
+.encrypted-text-area div {
+  background-image: url(./img/image.png);
+  width: 100%;
+  height: 50%;
+  max-width: 336px;
+  max-height: 304px;
+  background-size: cover;
+  background-position: center;
+}
+
+.encrypted-text-area p {
+  font-size: x-large;
+  font-weight: 700;
+  color: #343a40;
+  text-align: center;
+}
+
+.encrypted-text-area .container-text-required {
+  display: flex;
+  justify-content: space-between;
+  display: none;
+  height: 100%;
+}
+
+.encrypted-text-area .encrypted-area-calltoaction {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.encrypted-text-area .encrypted-area-hide-message {
+  display: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #495057;
+  max-width: 90%;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.encrypted-area-copiar-btn {
+  border-radius: 24px;
+  padding: 20px;
+  background-color: #d8dfe8;
+  width: 90%;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  max-width: 350px;
+  display: none;
+}
+
+.encrypted-area-copiar-btn:hover {
+  cursor: pointer;
+}
+
+.form-area {
+  width: 70%;
+  height: 90%;
+}
+
+.form-area button {
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  background-color: #0a3871;
+  width: 40%;
+  border: none;
+  color: #ffffff;
+  margin-right: 30px;
+  max-width: 350px;
+}
+
+.form-area button:hover {
+  cursor: pointer;
+}
+
+.form-area .form-area-btn-white {
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  background-color: #d8dfe8;
+}
+
+.form-area .form-area-container-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-area div div {
+  display: flex;
+  align-items: center;
+}
+.form-area div div p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form-area span svg {
+  height: 16px;
+}
+
+.form-area form {
+  height: 85%;
+  width: 100%;
+  margin-bottom: 40px;
+  color: #0a3871;
+}
+
+.form-area textarea {
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  resize: none;
+  color: #0a3871;
+  border: none;
+  padding-top: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.form-area textarea::placeholder {
+  font-size: x-large;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: #0a3871;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+nav img {
+  height: 10vh;
+  margin-left: 2%;
+}
+
+footer {
+  width: 100%;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #343a40;
+  display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer a :hover {
+  color: #0a3871;
+}
+
+footer svg {
+  width: 20px;
+}
+
+@media (width < 769px) {
+  .container-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .encrypted-text-area {
+    margin-top: 8vh;
+    width: 80%;
+    max-width: 530px;
+    height: 100%;
+  }
+  .encrypted-text-area div {
+    display: none;
+  }
+  .form-area {
+    width: 100%;
+  }
+
+  .form-area-container-button {
+    justify-content: center;
+  }
+
+  .form-area-container-btn div button {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+  }
+}
+
+@media (width < 375px) {
+  .form-area-container-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-area-container-button button {
+    width: 80%;
+  }
+  .encrypted-text-area {
+    margin-top: 17vh;
+  }
+}
